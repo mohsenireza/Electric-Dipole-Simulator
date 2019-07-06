@@ -1,0 +1,237 @@
+.content{
+	position:relative;	
+	width:1860px;
+	height:400px;
+	margin:250px auto;
+	text-align:center;
+}
+
+.rightinput{
+	position:absolute;
+	top:53%;
+	right:0%;
+	
+	width:200px;
+	height:30px;
+}
+
+.rightinput > input{
+	width:70%;
+	height:100%;
+	border-radius:3px;
+}
+
+.leftinput{
+	position:absolute;
+	top:53%;
+	left:0%;
+	
+	width:200px;
+	height:30px;
+}
+
+.leftinput > input{
+	width:70%;
+	height:100%;
+	border-radius:3px;
+}
+
+#go{
+	position:absolute;
+	top:-61.5%;
+	left:47.8%;
+	
+	border:5px solid #fff;
+	box-shadow:0 0 15px 3px #ccc inset;
+	height:80px;
+	width:80px;
+	border-radius:100%;
+	font-family:tahoma;
+	font-size:20px;
+	font-weight:600;
+	text-align:center;
+	line-height:500px;
+	background:url("../image/select.png") no-repeat 50%;
+	background-size:90px;
+	transition:1s;
+	overflow:hidden;
+	cursor:pointer;
+}
+
+#go:hover{
+	background-position:50% -1000%;
+	transform:rotate(360deg);
+	line-height:83px;
+}
+
+.content > .right{
+	position:absolute;
+	top:37.5%;
+	right:10%;
+	
+	border:5px solid #fff;
+	box-shadow:0 0 15px 3px #ccc inset;
+	width:150px;
+	height:150px;
+	border-radius:100%;
+	background:url("../image/icons8-minus-96.png") #fff no-repeat 50%;
+	background-size:95px;
+	cursor:pointer;
+	animation:animx1 5s infinite linear;
+}
+
+@keyframes animx1{
+
+0%{transform:rotate(0deg);}
+100%{transform:rotate(360deg);}
+
+}
+
+.content > .left{
+	position:absolute;
+	top:37.5%;
+	left:10%;
+	
+	border:5px solid #fff;
+	box-shadow:0 0 15px 3px #ccc inset;
+	width:150px;
+	height:150px;
+	border-radius:100%;
+	background:url("../image/icons8-plus-96.png") #fff no-repeat 50%;
+	background-size:95px;
+	cursor:pointer;
+	animation:animx2 5s infinite linear;
+}
+
+@keyframes animx2{
+
+0%{transform:rotateZ(0deg);}
+100%{transform:rotateZ(-360deg);}
+
+}
+
+.line0{
+	position:absolute;
+	top:33.5%;
+	left:15%;
+	
+	border:1px solid #ccc;
+	width:70%;
+	border-radius:65%;
+}
+
+.line1{
+	position:absolute;
+	top:33.5%;
+	left:14%;
+	transform:translateY(-30px);
+	
+	border:1px solid #ccc;
+	width:69%;
+	height:140px;
+	border-radius:35% 100% 100% 35%;
+}
+
+.line2{
+	position:absolute;
+	top:33.5%;
+	right:14%;
+	transform:translateY(-30px);
+	
+	border:1px solid #ccc;
+	width:69%;
+	height:140px;
+	border-radius:100% 35% 35% 100%;
+}
+
+.uparrow{
+	display:block;
+	position:absolute;	
+}
+
+.line0 > .uparrow{animation:anim1 2s infinite;}
+.line1 > .uparrow{animation:anim2 2s infinite;}
+.line2 > .uparrow{animation:anim3 2s infinite;}
+
+.downarrow{
+	display:block;
+	position:absolute;	
+}
+
+.line0 > .downarrow{animation:anim4 2s infinite;}
+.line1 > .downarrow{animation:anim5 2s infinite;}
+.line2 > .downarrow{animation:anim6 2s infinite;}
+
+@keyframes anim1{
+0%{
+	top:-5px;
+	left:40%;	
+}
+50%{
+	top:-9px;
+	left:50%;	
+}
+100%{
+	top:-5px;
+	left:60%;
+}
+}
+
+@keyframes anim2{
+0%{
+	top:-9px;
+	left:15%;	
+}
+100%{
+	top:-9px;
+	left:50%;
+}
+}
+
+@keyframes anim3{
+0%{
+	top:-8px;
+	left:50%;	
+}
+100%{
+	top:-8px;
+	left:85%;
+}
+}
+
+@keyframes anim4{
+0%{
+	bottom:-8px;
+	left:40%;	
+}
+50%{
+	bottom:-10px;
+	left:50%;	
+}
+100%{
+	bottom:-8px;
+	left:60%;
+}
+}
+
+@keyframes anim5{
+0%{
+	bottom:-9px;
+	left:15%;	
+}
+100%{
+	bottom:-9px;
+	left:50%;
+}
+}
+
+@keyframes anim6{
+0%{
+	bottom:-7px;
+	left:50%;	
+}
+100%{
+	bottom:-8px;
+	left:85%;
+}
+}
